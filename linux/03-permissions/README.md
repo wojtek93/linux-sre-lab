@@ -476,3 +476,27 @@ Allows everyone to create files but only the owner (or root) can delete them.
 - setgid ensures new files inherit the directory group.
 - sticky bit protects files in shared writable directories.
 - Always follow the principle of least privilege.
+
+## Automated Lab Setup
+
+The lab can be created automatically with:
+
+```bash
+./scripts/setup_setgid_lab.sh
+```
+
+Verification commands:
+
+```bash
+ls -ld /shared
+id alice
+getent group developers
+```
+
+The `/shared` directory should have the setgid bit enabled:
+
+```text
+drwxrwsr-x
+```
+
+Files created inside the directory should inherit the `developers` group.
