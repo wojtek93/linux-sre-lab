@@ -1,0 +1,1 @@
+0 8 * * * /pełna/ścieżka/do/09-disk/scripts/disk_report.sh

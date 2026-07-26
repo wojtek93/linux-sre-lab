@@ -1,0 +1,48 @@
+=====================================
+ Disk Usage Report
+=====================================
+
+Date: Sun Jul 26 12:48:36 PM UTC 2026
+Hostname: arista-lab
+Scan path: /var
+Warning threshold: 80%
+
+=====================================
+ Filesystem Usage
+=====================================
+
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                              679M  1.2M  678M   1% /run
+/dev/mapper/ubuntu--vg-ubuntu--lv   30G  7.1G   22G  25% /
+tmpfs                              1.7G     0  1.7G   0% /dev/shm
+efivarfs                           256K   94K  158K  38% /sys/firmware/efi/efivars
+none                               1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none                               1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs                              1.7G     0  1.7G   0% /tmp
+/dev/sda2                          2.0G   97M  1.7G   6% /boot
+/dev/sda1                          1.1G  6.4M  1.1G   1% /boot/efi
+none                               1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+none                               1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs                              340M  8.0K  340M   1% /run/user/1000
+
+=====================================
+ Filesystems Above Threshold
+=====================================
+
+No filesystems exceeded the configured threshold.
+
+=====================================
+ Largest Directories
+=====================================
+
+376M	/var/log
+184M	/var/lib
+150M	/var/cache
+1.8M	/var/crash
+1.4M	/var/backups
+32K	/var/tmp
+16K	/var/spool
+12K	/var/www
+4.0K	/var/snap
+4.0K	/var/opt
+
