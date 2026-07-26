@@ -1,0 +1,13 @@
+[Unit]
+Description=SRE Demo Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/wojtek/Projects/linux-sre-lab/linux/07-systemd/scripts/app.sh
+Restart=on-failure
+RestartSec=3
+User=wojtek
+
+[Install]
+WantedBy=multi-user.target
