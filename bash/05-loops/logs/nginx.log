@@ -1,0 +1,5 @@
+INFO GET /
+INFO GET /health
+INFO GET /login
+WARNING Slow request
+ERROR 502 Bad Gateway
