@@ -1,0 +1,1 @@
+Usage: service_check.sh <service_name>
