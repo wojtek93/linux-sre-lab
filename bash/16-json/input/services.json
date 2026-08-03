@@ -1,0 +1,28 @@
+{
+  "services": [
+    {
+      "name": "nginx",
+      "status": "running",
+      "port": 80,
+      "environment": "production"
+    },
+    {
+      "name": "postgres",
+      "status": "running",
+      "port": 5432,
+      "environment": "production"
+    },
+    {
+      "name": "redis",
+      "status": "stopped",
+      "port": 6379,
+      "environment": "development"
+    },
+    {
+      "name": "api",
+      "status": "running",
+      "port": 8080,
+      "environment": "development"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+nginx:80
+postgres:5432
+api:8080
