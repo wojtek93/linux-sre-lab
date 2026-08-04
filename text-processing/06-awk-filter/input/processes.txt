@@ -1,0 +1,6 @@
+nginx 15
+postgres 8
+redis 5
+api 12
+grafana 3
+prometheus 6

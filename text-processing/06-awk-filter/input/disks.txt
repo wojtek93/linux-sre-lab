@@ -1,0 +1,5 @@
+Filesystem Size Used Avail Use%
+/dev/sda1 100G 72G 28G 72%
+/dev/sda2 200G 180G 20G 90%
+/dev/sdb1 500G 120G 380G 24%
+/dev/sdc1 100G 95G 5G 95%
