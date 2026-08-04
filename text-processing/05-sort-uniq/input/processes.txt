@@ -1,0 +1,10 @@
+nginx
+postgres
+redis
+nginx
+nginx
+api
+redis
+postgres
+nginx
+api
