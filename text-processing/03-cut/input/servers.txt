@@ -1,0 +1,5 @@
+web01:192.168.1.10:production:nginx
+web02:192.168.1.11:staging:nginx
+db01:10.0.0.5:production:postgres
+cache01:10.0.0.6:development:redis
+api01:172.16.0.10:production:api

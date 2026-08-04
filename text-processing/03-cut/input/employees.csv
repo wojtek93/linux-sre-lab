@@ -1,0 +1,7 @@
+id,name,department,email,salary
+1,John,IT,john@example.com,8000
+2,Anna,HR,anna@example.com,6200
+3,Mark,IT,mark@example.com,9500
+4,Kate,Finance,kate@example.com,7000
+5,Tom,IT,tom@example.com,8700
+6,Robert,Security,robert@example.com,9200
