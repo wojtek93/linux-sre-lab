@@ -1,0 +1,8 @@
+john@example.com
+anna@test.org
+invalid-email
+admin@company.net
+test@test
+backup@mail.local
+root@example.com
+user123@gmail.com
