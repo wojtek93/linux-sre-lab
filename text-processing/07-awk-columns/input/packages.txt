@@ -1,0 +1,6 @@
+nginx 1.26 installed
+docker 28.2 installed
+kubectl 1.33 installed
+terraform 1.12 installed
+python 3.13 installed
+git 2.50 installed

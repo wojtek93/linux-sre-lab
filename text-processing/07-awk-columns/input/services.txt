@@ -1,0 +1,6 @@
+nginx running 15
+postgres running 8
+redis stopped 5
+api running 12
+grafana stopped 3
+prometheus running 6
