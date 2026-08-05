@@ -1,0 +1,17 @@
+[
+  {
+    "name": "vm-web01",
+    "resourceGroup": "Production",
+    "location": "westeurope"
+  },
+  {
+    "name": "vm-db01",
+    "resourceGroup": "Production",
+    "location": "westeurope"
+  },
+  {
+    "name": "vm-dev01",
+    "resourceGroup": "Development",
+    "location": "northeurope"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "container": "nginx",
+    "image": "nginx:latest",
+    "state": "running"
+  },
+  {
+    "container": "postgres",
+    "image": "postgres:16",
+    "state": "running"
+  },
+  {
+    "container": "redis",
+    "image": "redis:7",
+    "state": "exited"
+  }
+]

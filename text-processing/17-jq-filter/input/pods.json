@@ -1,0 +1,22 @@
+[
+  {
+    "name": "frontend",
+    "namespace": "default",
+    "status": "Running"
+  },
+  {
+    "name": "backend",
+    "namespace": "default",
+    "status": "Running"
+  },
+  {
+    "name": "database",
+    "namespace": "database",
+    "status": "Pending"
+  },
+  {
+    "name": "monitoring",
+    "namespace": "monitoring",
+    "status": "Running"
+  }
+]

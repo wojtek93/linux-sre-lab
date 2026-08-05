@@ -1,0 +1,22 @@
+[
+  {
+    "hostname": "web01",
+    "environment": "production",
+    "status": "running"
+  },
+  {
+    "hostname": "web02",
+    "environment": "production",
+    "status": "running"
+  },
+  {
+    "hostname": "db01",
+    "environment": "staging",
+    "status": "stopped"
+  },
+  {
+    "hostname": "cache01",
+    "environment": "development",
+    "status": "running"
+  }
+]
