@@ -1,0 +1,5 @@
+grafana
+nginx
+postgres
+prometheus
+redis

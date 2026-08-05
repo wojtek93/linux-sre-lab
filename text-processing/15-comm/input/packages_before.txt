@@ -1,0 +1,7 @@
+bash
+curl
+docker
+git
+jq
+python
+vim

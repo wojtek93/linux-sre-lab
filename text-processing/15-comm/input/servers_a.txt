@@ -1,0 +1,6 @@
+app01
+app02
+db01
+db02
+proxy01
+web01

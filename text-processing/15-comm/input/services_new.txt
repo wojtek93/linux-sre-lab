@@ -1,0 +1,7 @@
+grafana
+loki
+nginx
+postgres
+prometheus
+redis
+tempo

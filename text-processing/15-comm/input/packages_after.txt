@@ -1,0 +1,9 @@
+bash
+curl
+docker
+git
+htop
+jq
+python
+tmux
+vim
