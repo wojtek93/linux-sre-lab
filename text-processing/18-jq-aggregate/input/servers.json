@@ -1,0 +1,22 @@
+[
+  {
+    "hostname": "web01",
+    "environment": "production",
+    "cpu": 35
+  },
+  {
+    "hostname": "web02",
+    "environment": "production",
+    "cpu": 48
+  },
+  {
+    "hostname": "db01",
+    "environment": "staging",
+    "cpu": 72
+  },
+  {
+    "hostname": "cache01",
+    "environment": "development",
+    "cpu": 21
+  }
+]
