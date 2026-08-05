@@ -1,0 +1,7 @@
+docker DevOps
+terraform DevOps
+kubectl Kubernetes
+helm Kubernetes
+grafana Monitoring
+prometheus Monitoring
+ansible Automation
