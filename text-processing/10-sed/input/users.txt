@@ -1,0 +1,5 @@
+john;IT;8000
+anna;HR;6200
+mark;IT;9500
+kate;Finance;7000
+tom;IT;8700

@@ -1,0 +1,6 @@
+INFO Application started
+INFO User logged in
+ERROR Database connection failed
+WARNING Disk usage 85%
+ERROR Timeout while connecting
+INFO Shutdown complete

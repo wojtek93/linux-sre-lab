@@ -1,0 +1,4 @@
+Linux is awesome.
+Learning Bash is fun.
+AWK is powerful.
+DevOps automates everything.
