@@ -1,0 +1,6 @@
+sda1 72
+sda2 90
+sdb1 24
+sdc1 95
+sdd1 61
+sde1 83

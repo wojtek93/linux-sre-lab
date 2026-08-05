@@ -1,0 +1,7 @@
+server01 12
+server02 45
+server03 31
+server04 88
+server05 72
+server06 16
+server07 94
