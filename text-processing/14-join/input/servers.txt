@@ -1,0 +1,5 @@
+app01 production
+app02 production
+db01 staging
+db02 staging
+proxy01 development

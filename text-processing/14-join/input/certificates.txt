@@ -1,0 +1,5 @@
+adam RHCSA
+anna AZ-900
+john CKA
+kate Terraform Associate
+mark Prometheus Certified Associate

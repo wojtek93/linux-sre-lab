@@ -1,0 +1,5 @@
+adam Linux
+anna Docker
+john Kubernetes
+kate Terraform
+mark Prometheus
