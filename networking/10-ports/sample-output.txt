@@ -1,0 +1,24 @@
+=== LISTENING TCP/UDP SOCKETS ===
+Netid State  Recv-Q Send-Q                     Local Address:Port  Peer Address:PortProcess                                                                                                                         
+udp   UNCONN 0      0                             127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=637,fd=18))                                                                                      
+udp   UNCONN 0      0                          127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=637,fd=16))                                                                                      
+udp   UNCONN 0      0                    192.168.64.2%enp0s1:68         0.0.0.0:*    users:(("systemd-network",pid=913,fd=37))                                                                                      
+udp   UNCONN 0      0                              127.0.0.1:323        0.0.0.0:*    users:(("chronyd",pid=1134,fd=4))                                                                                              
+udp   UNCONN 0      0                                  [::1]:323           [::]:*    users:(("chronyd",pid=1134,fd=5))                                                                                              
+udp   UNCONN 0      0      [fe80::2872:9ff:fe3f:2898]%enp0s1:546           [::]:*    users:(("systemd-network",pid=913,fd=31))                                                                                      
+tcp   LISTEN 0      4096                           127.0.0.1:43267      0.0.0.0:*    users:(("containerd",pid=1137,fd=13))                                                                                          
+tcp   LISTEN 0      511                              0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=1315,fd=5),("nginx",pid=1314,fd=5),("nginx",pid=1313,fd=5),("nginx",pid=1312,fd=5),("nginx",pid=1310,fd=5))
+tcp   LISTEN 0      4096                             0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=2035,fd=3),("systemd",pid=1,fd=102))                                                                        
+tcp   LISTEN 0      4096                          127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=637,fd=19))                                                                                      
+tcp   LISTEN 0      4096                       127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=637,fd=17))                                                                                      
+tcp   LISTEN 0      511                                 [::]:80            [::]:*    users:(("nginx",pid=1315,fd=6),("nginx",pid=1314,fd=6),("nginx",pid=1313,fd=6),("nginx",pid=1312,fd=6),("nginx",pid=1310,fd=6))
+tcp   LISTEN 0      4096                                [::]:22            [::]:*    users:(("sshd",pid=2035,fd=4),("systemd",pid=1,fd=103))                                                                        
+
+=== ESTABLISHED TCP CONNECTIONS ===
+Recv-Q Send-Q Local Address:Port Peer Address:Port 
+0      0       192.168.64.2:22   192.168.64.1:61963
+0      0       192.168.64.2:22   192.168.64.1:61340
+
+=== SUMMARY ===
+Listening sockets: 13
+Established connections: 2
