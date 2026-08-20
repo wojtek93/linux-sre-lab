@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hello-job
+
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+
+      containers:
+        - name: hello
+          image: busybox:latest
+          command: ["sh", "-c", "echo Job started; sleep 3; echo Job finished"]
