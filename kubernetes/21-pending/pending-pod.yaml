@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pending-demo
+
+spec:
+  containers:
+    - name: demo
+      image: nginx:latest
+
+      resources:
+        requests:
+          cpu: "50m"
+          memory: "64Mi"
+
