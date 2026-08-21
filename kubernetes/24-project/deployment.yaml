@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: final-app
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: final-app
+
+  template:
+    metadata:
+      labels:
+        app: final-app
+
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+
+          ports:
+            - containerPort: 80
+
+          env:
+            - name: APP_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: final-app-secret
+                  key: APP_TOKEN
+
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "200m"
+              memory: "128Mi"
+
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            periodSeconds: 5
+
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            periodSeconds: 10
+
+          volumeMounts:
+            - name: html
+              mountPath: /usr/share/nginx/html
+
+            - name: app-data
+              mountPath: /data
+
+      volumes:
+        - name: html
+          configMap:
+            name: final-app-config
+
+        - name: app-data
+          persistentVolumeClaim:
+            claimName: final-app-pvc

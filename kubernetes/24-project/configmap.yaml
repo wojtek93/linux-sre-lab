@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: final-app-config
+
+data:
+  index.html: |
+    <html>
+      <body>
+        <h1>Wojtek Kubernetes Final Project</h1>
+        <p>Application is running.</p>
+      </body>
+    </html>
