@@ -1,0 +1,19 @@
+groups:
+  - name: application-alert-rules
+    rules:
+      - alert: HighErrorRate
+        expr: |
+          (
+            sum(rate(app_http_requests_total{status="500"}[5m]))
+            /
+            sum(rate(app_http_requests_total[5m]))
+          ) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          service: flask-app
+          team: sre
+        annotations:
+          summary: "Sustained high HTTP 5xx error rate"
+          description: "More than 5% of requests have returned HTTP 500 responses for at least 5 minutes."
+          runbook: "Check application logs, target health, recent deployments and resource usage."
