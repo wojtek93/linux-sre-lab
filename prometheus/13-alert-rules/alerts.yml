@@ -1,0 +1,16 @@
+groups:
+  - name: application-alert-rules
+    rules:
+      - alert: HighErrorRate
+        expr: |
+          (
+            sum(rate(app_http_requests_total{status="500"}[5m]))
+            /
+            sum(rate(app_http_requests_total[5m]))
+          ) > 0.05
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High HTTP error rate"
+          description: "HTTP 5xx error rate is above 5% for 2 minutes."
