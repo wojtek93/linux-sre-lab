@@ -1,0 +1,11 @@
+groups:
+  - name: application_recording_rules
+    rules:
+      - record: job:app_requests_total:rate5m
+        expr: rate(app_requests_total[5m])
+
+      - record: instance:node_cpu_usage:rate5m
+        expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
+
+      - record: instance:node_memory_usage_percent
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100

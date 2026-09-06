@@ -1,0 +1,53 @@
+groups:
+  - name: monitoring_alerts
+    rules:
+
+      - alert: ApplicationDown
+        expr: up{job="application"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Application is down"
+          description: "Prometheus cannot scrape the application for more than 1 minute."
+
+      - alert: NodeExporterDown
+        expr: up{job="node_exporter"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Node Exporter is down"
+          description: "Prometheus cannot scrape node_exporter."
+
+      - alert: HighCPUUsage
+        expr: instance:node_cpu_usage:rate5m > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage"
+          description: "CPU usage is above 80% for 5 minutes."
+
+      - alert: HighMemoryUsage
+        expr: instance:node_memory_usage_percent > 85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage"
+          description: "Memory usage is above 85% for 5 minutes."
+
+      - alert: DiskSpaceLow
+        expr: |
+          (
+            node_filesystem_avail_bytes{fstype!~"tmpfs|overlay"}
+            /
+            node_filesystem_size_bytes{fstype!~"tmpfs|overlay"}
+          ) * 100 < 15
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Disk space is low"
+          description: "Less than 15% disk space remains."
