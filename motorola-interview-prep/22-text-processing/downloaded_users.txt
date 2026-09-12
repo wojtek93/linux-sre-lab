@@ -1,0 +1,6 @@
+NAME AGE CITY SCORE
+wojtek 33 Rzeszow 87
+anna 29 Krakow 92
+marek 41 Warsaw 76
+kasia 35 Rzeszow 95
+piotr 28 Krakow 88
